@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div class="content-title">
+    Currencies exchange rates
+  </div>
+  <div class="content">
+    <div class="selection-count">
+      <select #c1 name="" id="country1" class="select-country" [(ngModel)]="firstSelect"
+              (mouseleave)="fromCurrency(c1.value)">
+        <option *ngFor="let curr of currencyName" value="{{curr}}">{{curr}}</option>
+      </select>
+      <input class="input-currency" [ngModel]="leftResult" (ngModelChange)="leftResult=$event" type="text"
+             (keyup)="leftCurrency($event)"/>
+
+      <select #c2 name="" id="country2" class="select-country" [(ngModel)]="secondSelect"
+              (mouseleave)="toCurrency(c2.value)">
+        <option *ngFor="let curr of currencyName" value="{{curr}}" (select)="curr">{{curr}}</option>
+      </select>
+      <input class="input-currency" type="text" [ngModel]="rightResult " (ngModelChange)="rightResult=$event"
+             (keyup)="rightCurrency($event)">
+    </div>
+  </div>
+</div>

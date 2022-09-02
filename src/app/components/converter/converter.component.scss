@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 0 10px;
+}
+
+.content-title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #2f4961;
+}
+
+.content {
+  width: 370px;
+  padding: 30px;
+  border-radius: 7px;
+  background-color: #f7f7f7;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+.input-currency {
+  height: 25px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
+  margin: 10px;
+}
+
+.select-country {
+  width: auto;
+  height: 26px;
+  border: 1px solid #999;
+}
