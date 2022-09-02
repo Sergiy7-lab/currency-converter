@@ -11,6 +11,9 @@
       <input class="input-currency" [ngModel]="leftResult" (ngModelChange)="leftResult=$event" type="text"
              (keyup)="leftCurrency($event)"/>
 
+    </div>
+
+    <div class="section-count">
       <select #c2 name="" id="country2" class="select-country" [(ngModel)]="secondSelect"
               (mouseleave)="toCurrency(c2.value)">
         <option *ngFor="let curr of currencyName" value="{{curr}}" (select)="curr">{{curr}}</option>
